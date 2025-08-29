@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 3</title>
+</head>
+<body>
+    <script>
+        let price = 200;
+        console.log(typeof price);
+
+        let myName = "Vadim";
+        console.log(typeof myName);
+        
+        let iAmStudent = true;
+        console.log(typeof iAmStudent);
+
+        let bigNumber = 60n;
+        console.log(typeof bigNumber);
+
+        let expirience;
+        console.log(typeof expirience);
+
+        let person = {
+            name: 'Vadim',
+            age: 22,
+            education: 'student',
+        };
+        console.log(typeof person);
+
+        const username = prompt("Enter your username");
+        const age = prompt("Enter your age");
+        const country = prompt("Where are you from?");
+        alert(`${username}, ${age}, ${country}`);
+
+        let number = 56789;
+        let result = number.toString().split("").join(" ");
+        console.log(result);
+    </script>
+</body>
+</html>
