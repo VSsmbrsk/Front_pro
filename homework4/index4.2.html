@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4.2</title>
+</head>
+<body>
+    <script>
+        const number = Number(prompt("Enter three digit number"));
+        console.log(number);
+        let a = Math.floor(number / 100);
+        let b = Math.floor(number / 10) % 10;
+        let c = number % 10;
+
+        if (a === b && b === c) {
+            console.log("All numbers are the same");
+        } else if (a === b || a === c || b === c) {
+            console.log("Two numbers are the same");
+        } else {
+            console.log("All numbers are different");
+        }
+    </script>
+</body>
+</html>
