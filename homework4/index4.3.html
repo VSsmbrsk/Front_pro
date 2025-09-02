@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4.3</title>
+</head>
+<body>
+    <script>
+        const age = prompt("Enter the year of your birth");
+        if (age === null) {
+            alert(`Oh no! You forgot to enter your year of birth`);
+        } else {
+            const city = prompt("What city do you live in?");
+            if (city === null) {
+                alert(`Oh no! You forgot to enter your city`);
+            } else {
+                const sport = prompt("Enter your favorite sport");
+                if (sport === null) {
+                    alert(`Oh no! You forgot to enter your favorite sport`);
+                } else {
+                    let message = `${age}, You live in ${city} city, ${sport}`;
+    
+                    if (city === "Kyiv") {
+                        message = `${age}, You live in the capital of Ukraine, ${sport}`;
+                    } else if (city === "Washington") {
+                        message = `${age}, You live in the capital of USA, ${sport}`;
+                    } else if (city === "London") {
+                        message = `${age}, You live in the capital of Great Britain, ${sport}`;
+                    }
+                
+                    if (sport.toLowerCase() === "football") {
+                        message += `, Do you like Lionel Messi?`;
+                    } else if (sport.toLowerCase() === "basketball") {
+                        message += `, Do you like LeBron James?`;
+                    } else if (sport.toLowerCase() === "tennis") {
+                        message += `, Do you like Rafael Nadal?`;
+                    }
+
+                    alert(message);
+
+                }
+            }
+        }
+
+        
+        
+    </script>
+</body>
+</html>
