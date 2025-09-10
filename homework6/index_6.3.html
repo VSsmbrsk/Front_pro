@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6.3</title>
+</head>
+<body>
+    <script>
+        const contactBook = {
+            contacts: [
+              { name: "Den", phone: "123-456-789", email: "den@example.com" },
+              { name: "Tom", phone: "987-654-321", email: "tom@example.com" }
+            ],
+
+            findContact(name) {
+              return this.contacts.find(contact => contact.name === name) || "Contact is not found";
+            },
+
+            addContact(name, phone, email) {
+              this.contacts.push({ name, phone, email });
+              console.log(`Contact ${name} is added`);
+            }
+};
+
+console.log(contactBook.findContact("Tom"));  
+
+contactBook.addContact("John", "555-111-222", "john@example.com");
+
+console.log(contactBook.contacts);
+</script>
+</body>
+</html>
