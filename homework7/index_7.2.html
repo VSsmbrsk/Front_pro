@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7.2</title>
+</head>
+<body>
+    <script>
+        const arrayOne = [2, 3, 4, false, "develop", "skip", 8];
+
+        const arrayNum = arrayOne.filter(Number);
+        console.log(arrayNum);
+
+        function average(nums) {
+            return nums.reduce((a, b) => (a + b)) / nums.length;
+        }
+        
+        console.log(average(arrayNum));
+    </script>
+</body>
+</html>
