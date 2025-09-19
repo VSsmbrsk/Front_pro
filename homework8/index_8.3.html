@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8.3</title>
+</head>
+
+<body>
+    <script>
+        function askNumber() {
+            let lastInput = null;
+
+            for (let i = 0; i < 10; i++) {
+                let input = prompt("Введіть число більше 100:");
+
+                if (input === null) {
+                    console.log("Ви скасували ввід");
+                    return;
+                }
+
+                let num = Number(input);
+
+                if (num > 100) {
+                    console.log("Останнє введене число:", num);
+                    return;
+                } else {
+                    lastInput = num;
+                }
+            }
+
+            console.log("Останнє введене число:", lastInput);
+        }
+    </script>
+</body>
+
+</html>
