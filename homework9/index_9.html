@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+</head>
+
+<body>
+    <script>
+        let ladder = {
+            point: 0,
+            up() {
+                this.point++;
+                return this;
+            },
+            down() {
+                this.point--;
+                return this;
+            },
+            showStep() {
+                console.log(this.point);
+                return this;
+            }
+        };
+
+        ladder.up().up().down().showStep();
+    </script>
+</body>
+
+</html>
