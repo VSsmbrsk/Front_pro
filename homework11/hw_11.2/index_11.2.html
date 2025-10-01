@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/homework11/hw_11.2/main.css">
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <script>
+        const setup = document.createElement('div')
+        const example = document.getElementById('container')
+        example.appendChild(setup)
+        setup.textContent = "I love JavaScript"
+        const myButton = document.createElement('button')
+        setup.appendChild(myButton)
+        myButton.textContent = 'Click me'
+        setup.style.display = 'flex'
+        setup.style.gap = '30px'
+        myButton.style.padding = '5px 10px'
+        myButton.style.background = '#1c1c1c'
+        myButton.style.color = '#fff'
+        myButton.style.borderRadius = '10px'
+        setup.style.justifyContent = 'center'
+        setup.style.alignItems = 'center'
+
+        myButton.addEventListener('click', function () {
+            return setup.classList.toggle('anycolor')
+        })
+    </script>
+</body>
+
+</html>
