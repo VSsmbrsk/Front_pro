@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/homework13/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>We would like to help you</h1>
+        <form id="myform" novalidate>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <p class="error"></p>
+            <textarea name="message" id="message" placeholder="Message" minlength="5"></textarea>
+            <p class="error"></p>
+            <h3>How to answer you?</h3>
+            <input type="tel" name="phone" id="phoneNumber" pattern="^\+380\d{9}$" value="+380"
+                placeholder="Phone number">
+            <p class="error"></p>
+            <input type="email" name="email" id="email" pattern="^[^@]+@[^@]+\.[^@]+$" placeholder="Email">
+            <p class="error"></p>
+            <button type="submit">Send message</button>
+        </form>
+    </div>
+</body>
+<script>
+    const form = document.getElementById('myform');
+    const inputs = form.querySelectorAll('input, textarea');
+    const errors = form.querySelectorAll('.error');
+
+    function showError(errorEl, message) {
+        if (message) {
+            errorEl.textContent = message;
+            errorEl.classList.add('active');
+        } else {
+            errorEl.textContent = '';
+            errorEl.classList.remove('active');
+        }
+    }
+
+    inputs.forEach((input, index) => {
+        const errorEl = errors[index];
+
+        input.addEventListener('input', () => {
+            if (input.validity.valid) {
+                showError(errorEl, '');
+            } else {
+                showError(errorEl, getErrorMessage(input));
+            }
+        });
+    });
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        let valid = true;
+
+        inputs.forEach((input, index) => {
+            const errorEl = errors[index];
+            if (!input.validity.valid) {
+                showError(errorEl, getErrorMessage(input));
+                valid = false;
+            }
+        });
+
+        if (!valid) {
+            event.preventDefault();
+        } else {
+            inputs.forEach(input => {
+                console.log(`${input.name}: ${input.value}`);
+            });
+            form.reset();
+        }
+    });
+
+    function getErrorMessage(input) {
+        if (input.validity.valueMissing) return "Field is required";
+        if (input.validity.tooShort) return `Minimum length is ${input.minLength}`;
+        if (input.validity.patternMismatch) {
+            if (input.type === 'email') return "Enter a valid email";
+            if (input.type === 'tel') return "Enter a valid phone number";
+        }
+        return "Invalid input";
+    }
+
+
+</script>
+
+</html>
