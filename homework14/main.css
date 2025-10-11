@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 5px;
+}
+
+.slider {
+    width: 300px;
+    height: 180px;
+}
+
+.slide {
+    position: absolute;
+    width: 300px;
+    height: 180px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.dots {
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 6px;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: black;
+}
