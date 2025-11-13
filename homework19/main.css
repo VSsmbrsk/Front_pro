@@ -1,0 +1,104 @@
+.container {
+    max-width: 650px;
+    padding: 20px;
+    background: linear-gradient(90deg, #2e4caa 0%, #272588 100%);
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+p,
+span {
+    color: #fff;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.span_wrapper,
+.time_wrapper {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.first_span {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.first_span::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../homework19/images/clock.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.second_span {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.second_span::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../homework19/images/low_battery.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+#time {
+    font-size: 90px;
+}
+
+#pm-span {
+    font-size: 25px;
+}
+
+.weather__item {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.pressure {
+    margin-bottom: 25px;
+}
+
+.degree {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.weather__point {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+a {
+    margin-left: 20px;
+}
+
+.right-block {
+    text-align: center;
+}
