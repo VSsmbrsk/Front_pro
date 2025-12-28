@@ -38,7 +38,7 @@ export const TodoForm = () => {
                 {errors.value && touched.value && <div>{errors.value}</div>}
                 </div>
         <button type="submit" className="form__btn">
-          Додати
+          Add
         </button>
       </Form>
         )}
