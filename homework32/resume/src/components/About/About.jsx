@@ -16,7 +16,7 @@ function About() {
   return (
     <Box sx={{ py: 8 }}>
       <Container maxWidth="lg">
-        <Typography variant="h4" component="h2" gutterBottom>
+        <Typography variant="h3" gutterBottom>
           About Me
         </Typography>
 
