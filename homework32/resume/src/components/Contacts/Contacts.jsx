@@ -4,6 +4,7 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DownloadIcon from "@mui/icons-material/Download";
+import cv from "../../assets/files/Resume-Vadym-Samborskyi.pdf";
 
 export default function Contacts() {
   return (
@@ -14,7 +15,7 @@ export default function Contacts() {
         py: { xs: 6, md: 10 },
       }}
     >
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <Typography variant="h3" component="h2" gutterBottom>
           Contacts
         </Typography>
@@ -88,7 +89,7 @@ export default function Contacts() {
               border: "3px solid #000",
             },
           }}
-          href="/files/Resume-Vadym-Samborskyi.pdf"
+          href={cv}
           target="_blank"
         >
           Download CV

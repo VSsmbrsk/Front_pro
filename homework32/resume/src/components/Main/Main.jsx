@@ -4,7 +4,7 @@ import ProjectsSection from "./ProjectsSection";
 
 function Main() {
   return (
-    <Container sx={{ py: 6 }}>
+    <Container sx={{ py: 6 }} maxWidth="lg">
       <HeroSection />
       <ProjectsSection />
     </Container>

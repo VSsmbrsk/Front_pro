@@ -15,7 +15,7 @@ const skills = [
 function About() {
   return (
     <Box sx={{ py: 8 }}>
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <Typography variant="h4" component="h2" gutterBottom>
           About Me
         </Typography>

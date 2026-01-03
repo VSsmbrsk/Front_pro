@@ -1,6 +1,7 @@
 import { Box, Typography, Button, Stack } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import cv from "../../assets/files/Resume-Vadym-Samborskyi.pdf";
 
 function HeroSection() {
   return (
@@ -35,7 +36,7 @@ function HeroSection() {
               border: "3px solid #000",
             },
           }}
-          href="/files/Resume-Vadym-Samborskyi.pdf"
+          href={cv}
           download
         >
           Download CV
