@@ -4,12 +4,15 @@ import Button from "@mui/material/Button";
 import { NavLink } from "react-router-dom";
 import Box from "@mui/material/Box";
 import { Link } from "@mui/material";
+import logo from "../../assets/images/logo-header.svg";
+import githubIcon from "../../assets/images/github-icon.svg";
+import linkedinIcon from "../../assets/images/linkedin-icon.svg";
 
 export default function Header() {
   return (
     <AppBar position="sticky">
       <Toolbar>
-        <Box component="img" alt="Logo" src="/image/logo-header.svg" />
+        <Box component="img" alt="Logo" src={logo} />
 
         <Box
           sx={{
@@ -36,22 +39,14 @@ export default function Header() {
             target="_blank"
             underline="none"
           >
-            <Box
-              component="img"
-              alt="GitHub Icon"
-              src="/image/github-icon.svg"
-            />
+            <Box component="img" alt="GitHub Icon" src={githubIcon} />
           </Link>
           <Link
             href="https://linkedin.com/in/vadym-samborskyi-232896373"
             target="_blank"
             underline="none"
           >
-            <Box
-              component="img"
-              alt="LinkedIn Icon"
-              src="/image/linkedin-icon.svg"
-            />
+            <Box component="img" alt="LinkedIn Icon" src={linkedinIcon} />
           </Link>
         </Box>
       </Toolbar>
