@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Grid, Chip, Stack } from "@mui/material";
+import { Box, Container, Typography, Grid, Chip } from "@mui/material";
 
 const skills = [
   "JavaScript",
@@ -50,7 +50,7 @@ function About() {
             Languages
           </Typography>
 
-          <Stack direction="row" spacing={1} flexWrap="wrap">
+          <Grid container spacing={1}>
             <Chip
               sx={{ bgcolor: "#000", color: "#fff" }}
               label="Russian — Fluent"
@@ -63,7 +63,7 @@ function About() {
               sx={{ bgcolor: "#000", color: "#fff" }}
               label="English — Intermediate (reading docs and basic communication)"
             />
-          </Stack>
+          </Grid>
         </Box>
       </Container>
     </Box>
