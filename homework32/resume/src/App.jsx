@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import About from "./components/About/About";
@@ -21,7 +21,7 @@ function App() {
       <Box
         sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
       >
-        <HashRouter>
+        <BrowserRouter>
           <Header />
           <ErrorBoundary>
             <main>
@@ -34,7 +34,7 @@ function App() {
             </main>
           </ErrorBoundary>
           <Footer />
-        </HashRouter>
+        </BrowserRouter>
       </Box>
     </ThemeProvider>
   );
