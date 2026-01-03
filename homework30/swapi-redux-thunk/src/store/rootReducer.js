@@ -22,13 +22,13 @@ const swapiSlice = createSlice({
   initialState: {
     data: null,
     loading: false,
-    error: null
+    error: null,
   },
   reducers: {
     clearData(state) {
       state.data = null;
       state.error = null;
-    }
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -44,7 +44,7 @@ const swapiSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
       });
-  }
+  },
 });
 
 export const { clearData } = swapiSlice.actions;
