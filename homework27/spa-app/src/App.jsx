@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import About from "./components/About/About";
@@ -14,22 +14,22 @@ function App() {
 
   return (
     <ThemeContext.Provider value={[theme, setTheme]}>
-      <BrowserRouter>
+      <HashRouter>
         <div className="content" style={{ background: theme.background }}>
           <Header />
           <ErrorBoundary>
             <main>
               <Routes>
-                <Route path="*" element={<NotFound />} />
                 <Route path="/" element={<Main />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contacts" element={<Contacts />} />
+                <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
           </ErrorBoundary>
           <Footer />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeContext.Provider>
   );
 }

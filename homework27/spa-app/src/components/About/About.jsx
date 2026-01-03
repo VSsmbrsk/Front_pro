@@ -1,17 +1,18 @@
-const About = () => <>
-<section className="about">
+const About = () => (
+  <>
+    <section>
       <h1>About the Project</h1>
 
       <p>
-        This website is a learning SPA project created to practice working
-        with React, React Router and the Context API. The main goal of the
-        project is to understand how modern client-side applications are
-        built without full page reloads.
+        This website is a learning SPA project created to practice working with
+        React, React Router and the Context API. The main goal of the project is
+        to understand how modern client-side applications are built without full
+        page reloads.
       </p>
 
-      <p>
-        During development, functional components, React hooks
-        (<code>useState</code>, <code>useContext</code>) and core React
+      <p style={{ marginBottom: "20px" }}>
+        During development, functional components, React hooks (
+        <code>useState</code>, <code>useContext</code>) and core React
         architecture principles are used.
       </p>
 
@@ -27,6 +28,8 @@ const About = () => <>
         The project is continuously evolving and serves as a foundation for
         further experiments and improvements.
       </p>
-    </section></>;
+    </section>
+  </>
+);
 
 export default About;
