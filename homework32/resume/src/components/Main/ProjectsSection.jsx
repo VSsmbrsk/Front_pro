@@ -36,7 +36,7 @@ const projects = [
   {
     title: "Createx",
     description: "Online School multipage website.",
-    tech: ["HTML", "CSS", "JavaScript", "JQuery", "SCSS"],
+    tech: ["HTML", "CSS", "JavaScript", "JQuery", "SCSS", "Bootstrap"],
     github: "https://github.com/VSsmbrsk/Createx",
     live: "https://vssmbrsk.github.io/Createx/",
   },

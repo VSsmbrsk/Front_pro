@@ -5,14 +5,14 @@ import {
   Typography,
   Button,
   Chip,
-  Stack,
+  Grid,
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 function ProjectCard({ project }) {
   return (
     <Card>
-      <CardContent>
+      <CardContent sx={{ maxWidth: "250px" }}>
         <Typography variant="h6" gutterBottom>
           {project.title}
         </Typography>
@@ -21,7 +21,7 @@ function ProjectCard({ project }) {
           {project.description}
         </Typography>
 
-        <Stack direction="row" spacing={1} sx={{ mt: 2 }} flexWrap="wrap">
+        <Grid container spacing={1} sx={{ mt: 2 }}>
           {project.tech.map((tech) => (
             <Chip
               key={tech}
@@ -30,7 +30,7 @@ function ProjectCard({ project }) {
               sx={{ border: "1px solid #8fbc8f", bgcolor: "transparent" }}
             />
           ))}
-        </Stack>
+        </Grid>
       </CardContent>
 
       <CardActions>
