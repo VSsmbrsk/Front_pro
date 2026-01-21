@@ -10,6 +10,13 @@ const projects = [
     live: "https://vssmbrsk.github.io/resume/",
   },
   {
+    title: "Booking",
+    description: "Online hotel booking service",
+    tech: ["React", "JavaScript", "Redux", "Material UI", "Vite", "API"],
+    github: "https://github.com/VSsmbrsk/booking-app",
+    live: "https://vssmbrsk.github.io/booking-app/",
+  },
+  {
     title: "Todo App",
     description: "Todo application with state management.",
     tech: ["React", "Redux", "Redux-saga", "Vite", "Formik"],
