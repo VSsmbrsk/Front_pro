@@ -4,15 +4,15 @@ import ProjectCard from "./ProjectCard";
 const projects = [
   {
     title: "Resume Website",
-    description: "Personal portfolio built with React and MUI.",
-    tech: ["React", "MUI", "Vite"],
+    description: "Personal portfolio built with React + MUI.",
+    tech: ["React", "Material UI", "Vite", "JavaScript"],
     github: "https://github.com/VSsmbrsk/Front_pro/tree/main/homework32/resume",
     live: "https://vssmbrsk.github.io/resume/",
   },
   {
     title: "Booking",
     description: "Online hotel booking service",
-    tech: ["React", "JavaScript", "Redux", "Material UI", "Vite", "API"],
+    tech: ["React", "Redux", "Material UI", "Vite", "API"],
     github: "https://github.com/VSsmbrsk/booking-app",
     live: "https://vssmbrsk.github.io/booking-app/",
   },
@@ -27,15 +27,7 @@ const projects = [
   {
     title: "SWAPI App",
     description: "SWAPI application with state management.",
-    tech: [
-      "React",
-      "Redux",
-      "API",
-      "Redux-thunk",
-      "Vite",
-      "Formik",
-      "Framer Motion",
-    ],
+    tech: ["React", "API", "Redux-thunk", "Vite", "Formik", "Framer Motion"],
     github:
       "https://github.com/VSsmbrsk/Front_pro/tree/main/homework30/swapi-redux-thunk",
     live: "https://vssmbrsk.github.io/swapi-redux-thunk/",
